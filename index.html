@@ -12,17 +12,24 @@
 <body>
 
     <nav>
-        <div class="logo">
-            <span>AIMO</span> LAB
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="strumenti.html">Strumenti</a></li>
-            <li><a href="contatti.html">Contatti</a></li>
-            <li><a href="chi-siamo.html">Chi siamo</a></li>
-            <li><a href="articoli.html">Articoli</a></li>
-        </ul>
-    </nav>
+    <div class="logo">
+        <span>AIMO</span> LAB
+    </div>
+    
+    <!-- Pulsante Menu per Smartphone -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Apri Menu">
+        ⚙️ <!-- Oppure puoi usare l'icona ☰ -->
+    </button>
+
+    <!-- Lista dei link -->
+    <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="strumenti.html">Strumenti</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="chi-siamo.html">Chi siamo</a></li>
+        <li><a href="articoli.html">Articoli</a></li>
+    </ul>
+</nav>
 
     <header>
         <div class="mascotte">
@@ -286,6 +293,15 @@
             top: 0,
             behavior: "smooth" // Scorrimento fluido
         });
+    });
+</script>
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function() {
+        navLinks.classList.toggle("attivo");
     });
 </script>
     
