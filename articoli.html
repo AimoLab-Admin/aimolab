@@ -165,30 +165,6 @@
             <a href="cookie.html">Cookie Policy</a>
         </p>
     </footer>
-
-<!-- Pulsante Torna Su -->
-<button id="btnTornaSu" title="Torna in alto">↑</button>
-
-<script>
-    const btnTornaSu = document.getElementById("btnTornaSu");
-
-    // Mostra o nasconde il pulsante in base allo scorrimento
-    window.onscroll = function() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            btnTornaSu.style.display = "block";
-        } else {
-            btnTornaSu.style.display = "none";
-        }
-    };
-
-    // Scorre la pagina verso l'alto quando si clicca il pulsante
-    btnTornaSu.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth" // Scorrimento fluido
-        });
-    });
-</script>
     
 </body>
 
