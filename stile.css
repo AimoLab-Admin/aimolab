@@ -17,11 +17,10 @@ p {
     line-height: 1.6;
 }
 
-/* ===== HEADER CON SFONDO TECH NUOVO ===== */
+/* ===== HEADER CON SFONDO TECH ===== */
 header {
     position: relative;
     padding: 80px 20px;
-    /* Effetto sfumato e hi-tech layered */
     background: 
         radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.2) 0%, transparent 40%),
         radial-gradient(circle at 20% 80%, rgba(124, 58, 237, 0.45) 0%, transparent 50%),
@@ -50,8 +49,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 20px 40px;
+    padding: 15px 40px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .logo {
@@ -72,6 +74,7 @@ nav {
     color: #7c3aed;
 }
 
+/* Menu Desktop (visibile di default) */
 nav ul {
     list-style: none;
     display: flex;
@@ -88,6 +91,11 @@ nav a {
 
 nav a:hover {
     color: #2563eb;
+}
+
+/* Pulsante Menu Toggle (Nascosto di default su Desktop) */
+.menu-toggle {
+    display: none !important;
 }
 
 /* ===== CONTENUTI E SCHEDE (BOX) ===== */
@@ -177,62 +185,14 @@ footer a:hover {
 }
 
 @keyframes fluttua {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* ===== MOBILE (SMARTPHONE E TABLET) ===== */
-@media (max-width: 700px) {
-    nav {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    header h1 {
-        font-size: 32px;
-    }
-
-    .contenitore {
-        margin: 20px;
-        padding: 20px;
-    }
-
-    .mascotte {
-        position: relative;
-        right: auto;
-        top: auto;
-        transform: none;
-        margin: 20px auto 0;
-        text-align: center;
-    }
-
-    .mascotte img {
-        width: 110px;
-        margin: 0 auto;
-    }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 
 /* ==========================================
    SEZIONE ULTIMI ARTICOLI (CARD MODERNE)
    ========================================== */
-
 .sezione-articoli {
     margin: 40px 0;
 }
@@ -248,14 +208,12 @@ footer a:hover {
     margin-bottom: 25px;
 }
 
-/* Layout a Griglia Reattiva */
 .griglia-articoli-home {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
-/* Stile della singola Card */
 .card-articolo-home {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
@@ -267,14 +225,12 @@ footer a:hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* Effetto Hover quando l'utente passa sopra con il mouse */
 .card-articolo-home:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
     border-color: #cbd5e1;
 }
 
-/* Etichetta di Categoria (Tag) */
 .card-tag {
     align-self: flex-start;
     background-color: #eff6ff;
@@ -288,7 +244,6 @@ footer a:hover {
     letter-spacing: 0.5px;
 }
 
-/* Titolo dell'Articolo */
 .card-articolo-home h4 {
     font-size: 1.15rem;
     color: #0f172a;
@@ -296,7 +251,6 @@ footer a:hover {
     margin: 0 0 10px 0;
 }
 
-/* Breve descrizione */
 .card-articolo-home p {
     font-size: 0.92rem;
     color: #475569;
@@ -305,7 +259,6 @@ footer a:hover {
     flex-grow: 1;
 }
 
-/* Pulsante d'azione (CTA) - Gradiente Sfumato AIMO Style */
 .btn-card {
     display: inline-block;
     align-self: flex-start;
@@ -329,7 +282,6 @@ footer a:hover {
 /* ==========================================
    WIDGET INTERATTIVO QUIZ AI
    ========================================== */
-
 .box-widget {
     background: #ffffff;
     border: 2px solid #e2e8f0;
@@ -388,7 +340,7 @@ footer a:hover {
 
 /* --- BOX NEWSLETTER IN FONDO --- */
 .box-newsletter {
-    background: #111827; /* Dark background coordinato */
+    background: #111827;
     border: 1px solid #1f2937;
     border-radius: 12px;
     padding: 30px 20px;
@@ -436,7 +388,6 @@ footer a:hover {
     border-color: #2563eb;
 }
 
-/* Pulsante coerente con i bottoni AIMO Style */
 .btn-newsletter {
     background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     color: #ffffff;
@@ -500,13 +451,6 @@ footer a:hover {
     border-color: #2563eb;
 }
 
-/* --- FIX ANCORAGGIO PULSANTE CARD --- */
-.card-articolo-home {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 /* Box Placeholder per Google Ads */
 .ad-slot {
     width: 100%;
@@ -516,7 +460,7 @@ footer a:hover {
     border: 1px dashed #cbd5e1;
     border-radius: 8px;
     padding: 10px;
-    min-height: 90px; /* Previene il salto del layout */
+    min-height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -533,18 +477,18 @@ footer a:hover {
 
 /* Stile del pulsante Torna Su */
 #btnTornaSu {
-    display: none; /* Nascosto di default */
+    display: none;
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #2563eb; /* Colore blu del tema */
+    background-color: #2563eb;
     color: white;
     cursor: pointer;
     padding: 12px 16px;
-    border-radius: 50%; /* Rende il pulsante circolare */
+    border-radius: 50%;
     font-size: 18px;
     font-weight: bold;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -552,66 +496,87 @@ footer a:hover {
 }
 
 #btnTornaSu:hover {
-    background-color: #1d4ed8; /* Sfumatura più scura al passaggio del mouse */
-    transform: translateY(-3px); /* Leggero effetto di sollevamento */
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
 }
 
-/* Nascondi il pulsante menu di default sui computer */
-.menu-toggle {
-    display: none;
-    background: transparent;
-    border: none;
-    font-size: 22px;
-    cursor: pointer;
-    color: #1e293b;
-    padding: 5px 10px;
-    border-radius: 6px;
-}
-
-/* Regole per Smartphone e Tablet (schermi piccoli) */
+/* ==========================================
+   MEDIA QUERIES SMARTPHONE E TABLET (< 768px)
+   ========================================== */
 @media (max-width: 768px) {
+    /* Barra di navigazione per Mobile */
     nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        padding: 12px 20px;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 15px 20px !important;
     }
 
-    /* Mostra il pulsante a destra */
+    /* Mostra il pulsante Settings/Menu a destra */
     .menu-toggle {
-        display: block;
+        display: block !important;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #1e293b;
+        padding: 4px 8px;
+        margin: 0 !important;
     }
 
-    /* Trasforma la barra in un menu a tendina nascosto */
+    /* Menu a tendina per Mobile (nascosto di default) */
     nav ul {
-        display: none; /* Nascosto di base su mobile */
-        flex-direction: column;
+        display: none !important;
+        flex-direction: column !important;
         position: absolute;
         top: 100%;
         left: 0;
-        right: 0;
+        width: 100%;
         background-color: #ffffff;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-        padding: 15px 0;
+        padding: 10px 0 !important;
         margin: 0;
         list-style: none;
         z-index: 1000;
-        border-bottom: 2px solid #2563eb;
+        border-bottom: 3px solid #2563eb;
     }
 
-    /* Classe attivata da JavaScript per mostrare la tendina */
+    /* Mostra la tendina al click del pulsante */
     nav ul.attivo {
-        display: flex;
+        display: flex !important;
     }
 
     nav ul li {
         text-align: center;
-        padding: 10px 0;
+        padding: 12px 0;
     }
 
     nav ul li a {
         display: block;
         width: 100%;
+    }
+
+    /* Adattamento Header e Contenuti Mobile */
+    header h1 {
+        font-size: 32px;
+    }
+
+    .contenitore {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .mascotte {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+
+    .mascotte img {
+        width: 110px;
+        margin: 0 auto;
     }
 }
