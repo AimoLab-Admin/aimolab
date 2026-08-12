@@ -530,3 +530,28 @@ footer a:hover {
     letter-spacing: 0.5px;
     margin-bottom: 5px;
 }
+
+/* Stile del pulsante Torna Su */
+#btnTornaSu {
+    display: none; /* Nascosto di default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #2563eb; /* Colore blu del tema */
+    color: white;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 50%; /* Rende il pulsante circolare */
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#btnTornaSu:hover {
+    background-color: #1d4ed8; /* Sfumatura più scura al passaggio del mouse */
+    transform: translateY(-3px); /* Leggero effetto di sollevamento */
+}
