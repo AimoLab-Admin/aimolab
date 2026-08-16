@@ -580,3 +580,48 @@ footer a:hover {
         margin: 0 auto;
     }
 }
+
+/* Layout per smartphone (schermi fino a 768px) */
+@media (max-width: 768px) {
+  .griglia-articoli-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important; /* Dispone le card su 2 colonne */
+    gap: 10px; /* Riduce lo spazio tra una scheda e l'altra per farle entrare bene */
+    padding: 0 5px;
+  }
+
+  /* Ottimizzazione del contenuto interno delle card per non farlo strabordare */
+  .card-articolo-home {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-articolo-home h4 {
+    font-size: 0.95rem; /* Riduce leggermente la dimensione del titolo */
+    line-height: 1.3;
+    margin: 8px 0;
+  }
+
+  .card-articolo-home p {
+    font-size: 0.8rem; /* Riduce il testo descrittivo per occupare meno spazio in altezza */
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limita il testo a massimo 3 righe */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-articolo-home .card-tag {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+  }
+
+  .card-articolo-home .btn-card {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 8px;
+  }
+}
