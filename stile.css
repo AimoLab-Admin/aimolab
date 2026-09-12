@@ -625,3 +625,22 @@ footer a:hover {
     margin-top: 8px;
   }
 }
+
+.articolo-dettaglio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+.articolo-dettaglio th {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 12px;
+}
+.articolo-dettaglio td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+.articolo-dettaglio tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
