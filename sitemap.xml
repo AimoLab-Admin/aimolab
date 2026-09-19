@@ -4,44 +4,54 @@
     <!-- Pagine Principali -->
     <url>
         <loc>https://aimolab-admin.github.io/aimolab/</loc>
-        <lastmod>2026-09-12</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://aimolab-admin.github.io/aimolab/articoli.html</loc>
-        <lastmod>2026-09-12</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <priority>0.90</priority>
     </url>
     <url>
         <loc>https://aimolab-admin.github.io/aimolab/strumenti.html</loc>
-        <lastmod>2026-09-12</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://aimolab-admin.github.io/aimolab/chi-siamo.html</loc>
-        <lastmod>2026-09-12</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <priority>0.50</priority>
     </url>
     <url>
         <loc>https://aimolab-admin.github.io/aimolab/contatti.html</loc>
-        <lastmod>2026-09-12</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>https://aimolab-admin.github.io/aimolab/privacy.html</loc>
+        <lastmod>2026-09-19</lastmod>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://aimolab-admin.github.io/aimolab/cookie.html</loc>
+        <lastmod>2026-09-19</lastmod>
+        <priority>0.30</priority>
     </url>
 
     <!-- Articoli SEO & Guide -->
     <url>
         <loc>https://aimolab-admin.github.io/aimolab/articoli/guida-emergent-ai-creare-app.html</loc>
-        <lastmod>2026-09-12</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://aimolab-admin.github.io/aimolab/articoli/emergent-ai-vs-bolt-vs-lovable.html</loc>
-        <lastmod>2026-09-12</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://aimolab-admin.github.io/aimolab/articoli/canali-faceless-ai-tiktok-shorts.html</loc>
-        <lastmod>2026-09-12</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <priority>0.85</priority>
     </url>
     <url>
