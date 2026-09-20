@@ -7,31 +7,60 @@
     <title>AIMO LAB - Guide e Strumenti di Intelligenza Artificiale</title>
     <meta name="description" content="Impara a usare l'intelligenza artificiale in modo semplice e gratuito. Guide, tutorial e recensioni sui migliori strumenti AI curati da AIMO LAB.">
     <link rel="stylesheet" href="stile.css">
+
+    <!-- Dati Strutturati Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://aimolab.it/#website",
+          "url": "https://aimolab.it/",
+          "name": "AIMO LAB",
+          "description": "Guide, strumenti e consigli pratici per utilizzare l'intelligenza artificiale nella vita quotidiana, nello studio e nel lavoro.",
+          "publisher": {
+            "@id": "https://aimolab.it/#organization"
+          },
+          "inLanguage": "it-IT"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://aimolab.it/#organization",
+          "name": "AIMO LAB",
+          "url": "https://aimolab.it/",
+          "logo": "https://aimolab.it/mascotte-ai.png",
+          "email": "aimolab.info@gmail.com",
+          "description": "Laboratorio online di guide pratiche, tutorial e strumenti dedicati all'Intelligenza Artificiale."
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
 
     <nav>
-    <a href="index.html" style="text-decoration: none; color: inherit;">
-    <div class="logo">
-        <span>AIMO</span> LAB
-    </div>
-</a>
-    
-    <!-- Pulsante Menu per Smartphone -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Apri Menu">
-        ☰ <!-- Oppure puoi usare l'icona ☰ -->
-    </button>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo">
+                <span>AIMO</span> LAB
+            </div>
+        </a>
+        
+        <!-- Pulsante Menu per Smartphone -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Apri Menu">
+            ☰
+        </button>
 
-    <!-- Lista dei link -->
-    <ul id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="strumenti.html">Strumenti</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-        <li><a href="chi-siamo.html">Chi siamo</a></li>
-        <li><a href="articoli.html">Articoli</a></li>
-    </ul>
-</nav>
+        <!-- Lista dei link -->
+        <ul id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="strumenti.html">Strumenti</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+            <li><a href="chi-siamo.html">Chi siamo</a></li>
+            <li><a href="articoli.html">Articoli</a></li>
+        </ul>
+    </nav>
 
     <header>
         <div class="mascotte">
@@ -44,70 +73,70 @@
 
         <p style="color: #1e293b; font-size: 1.05em; font-weight: 500;">Guide, strumenti e consigli pratici per utilizzare l'intelligenza artificiale nella vita quotidiana, nello studio e nel lavoro.</p>
 
-        <!-- SEZIONE ULTIMI ARTICOLI (CARD MODERNE CON SFONDO COLORATO) -->
+        <!-- SEZIONE ULTIMI ARTICOLI -->
         <section class="sezione-articoli">
             <div class="intestazione-sezione">
-                <h3 style="color: #0f172a;">📰 Ultimi articoli pubblicati</h3>
-                <p style="color: #334155;">Esplora le nostre ultime guide pratiche ed esplicative per iniziare da zero:</p>
+                <h2 style="color: #0f172a; font-size: 1.5em; margin-bottom: 5px;">📰 Ultimi articoli pubblicati</h2>
+                <p style="color: #334155; margin-top: 0;">Esplora le nostre ultime guide pratiche ed esplicative per iniziare da zero:</p>
             </div>
 
-           <div class="griglia-articoli-home">
+            <div class="griglia-articoli-home">
 
-    <!-- Card 1 -->
-    <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
-        <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Guida Pratica AI</div>
-        <h4 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">💡 Come Usare ChatGPT Gratis nella Vita Quotidiana e a Scuola</h4>
-        <p style="color: #334155;">Scopri come usare ChatGPT per semplificare i compiti di tutti i giorni, organizzare la casa, studiare in modo efficace e risparmiare tempo direttamente dallo smartphone.</p>
-        <a href="articoli/canali-faceless-ai-tiktok-shorts.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
-    </article>
-               
-    <!-- Card 2 -->
-    <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
-        <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Social & Monetizzazione</div>
-        <h4 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">Canali Faceless e AI: Come Automatizzare Video per TikTok e Shorts con ChatGPT, ElevenLabs e CapCut</h4>
-        <p style="color: #334155;">La guida passo passo per creare e monetizzare video brevi senza mostrare il volto. Impara a combinare ChatGPT, ElevenLabs e CapCut per un workflow veloce ed efficace.</p>
-        <a href="articoli/canali-faceless-ai-tiktok-shorts.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
-    </article>
+                <!-- Card 1 -->
+                <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
+                    <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Guida Pratica AI</div>
+                    <h3 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">💡 Come Usare ChatGPT Gratis nella Vita Quotidiana e a Scuola</h3>
+                    <p style="color: #334155;">Scopri come usare ChatGPT per semplificare i compiti di tutti i giorni, organizzare la casa, studiare in modo efficace e risparmiare tempo direttamente dallo smartphone.</p>
+                    <a href="articoli/chatgpt-uso-quotidiano-scuola.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
+                </article>
+                
+                <!-- Card 2 -->
+                <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
+                    <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Social & Monetizzazione</div>
+                    <h3 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">Canali Faceless e AI: Come Automatizzare Video per TikTok e Shorts con ChatGPT, ElevenLabs e CapCut</h3>
+                    <p style="color: #334155;">La guida passo passo per creare e monetizzare video brevi senza mostrare il volto. Impara a combinare ChatGPT, ElevenLabs e CapCut per un workflow veloce ed efficace.</p>
+                    <a href="articoli/canali-faceless-ai-tiktok-shorts.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
+                </article>
 
-    <!-- Card 3 -->
-    <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
-        <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Confronto Tech</div>
-        <h4 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">Emergent AI vs Bolt.new vs Lovable: Quale Scegliere nel 2026?</h4>
-        <p style="color: #334155;">Confronto approfondito sui migliori strumenti di vibe coding. Scopri differenze, caratteristiche e qual è la piattaforma ideale per la tua app web o mobile.</p>
-        <a href="articoli/emergent-ai-vs-bolt-vs-lovable.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
-    </article>
+                <!-- Card 3 -->
+                <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
+                    <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Confronto Tech</div>
+                    <h3 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">Emergent AI vs Bolt.new vs Lovable: Quale Scegliere nel 2026?</h3>
+                    <p style="color: #334155;">Confronto approfondito sui migliori strumenti di vibe coding. Scopri differenze, caratteristiche e qual è la piattaforma ideale per la tua app web o mobile.</p>
+                    <a href="articoli/emergent-ai-vs-bolt-vs-lovable.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
+                </article>
 
-    <!-- Card 4 -->
-    <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
-        <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Guida Base</div>
-        <h4 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">🚀 Emergent AI: Guida Completa alla Creazione di App Web e Mobile con l'Intelligenza Artificiale</h4>
-        <p style="color: #334155;">Scopri cos'è Emergent AI, come funziona la sua architettura multi-agente e come utilizzarla per sviluppare e lanciare applicazioni full-stack complete partendo da semplici prompt in testo.</p>
-        <a href="articoli/guida-emergent-ai-creare-app.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
-    </article>
+                <!-- Card 4 -->
+                <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
+                    <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Guida Base</div>
+                    <h3 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">🚀 Emergent AI: Guida Completa alla Creazione di App Web e Mobile con l'Intelligenza Artificiale</h3>
+                    <p style="color: #334155;">Scopri cos'è Emergent AI, come funziona la sua architettura multi-agente e come utilizzarla per sviluppare e lanciare applicazioni full-stack complete partendo da semplici prompt in testo.</p>
+                    <a href="articoli/guida-emergent-ai-creare-app.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
+                </article>
 
-    <!-- Card 5 -->
-    <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
-        <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Produttività</div>
-        <h4 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">I 50 migliori Prompt per ChatGPT</h4>
-        <p style="color: #334155;">Una vasta scelta di prompt già pronti, da poter utilizzare per aiutarti nella vita di tutti i giorni.</p>
-        <a href="articoli/50-migliori-prompt-chatgpt.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
-    </article>
+                <!-- Card 5 -->
+                <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
+                    <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Produttività</div>
+                    <h3 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">I 50 migliori Prompt per ChatGPT</h3>
+                    <p style="color: #334155;">Una vasta scelta di prompt già pronti, da poter utilizzare per aiutarti nella vita di tutti i giorni.</p>
+                    <a href="articoli/50-migliori-prompt-chatgpt.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
+                </article>
 
-    <!-- Card 6 -->
-    <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
-        <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Generatori di Immagini AI</div>
-        <h4 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">Le Migliori AI per Generare Immagini</h4>
-        <p style="color: #334155;">La scelta su misura per te per trasformare idee in illustrazioni.</p>
-        <a href="articoli/generatori-immagini-ai-midjourney-dall-e-flux.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
-    </article>
+                <!-- Card 6 -->
+                <article class="card-articolo-home" style="background: #d4c0f5; border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px;">
+                    <div class="card-tag" style="color: #4f46e5; font-size: 0.8em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Generatori di Immagini AI</div>
+                    <h3 style="color: #0f172a; margin-top: 0; margin-bottom: 10px; font-size: 1.1em; line-height: 1.3;">Le Migliori AI per Generare Immagini</h3>
+                    <p style="color: #334155;">La scelta su misura per te per trasformare idee in illustrazioni.</p>
+                    <a href="articoli/generatori-immagini-ai-midjourney-dall-e-flux.html" class="btn-card" style="background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 0.9em; font-weight: bold; margin-top: 10px;">Leggi l'articolo →</a>
+                </article>
 
-</div>
+            </div>
         </section>
 
-        <!-- 1. BANNER ISCRIZIONE NEWSLETTER INTERMEDIO (COLLEGATO A FORMSPREE) -->
+        <!-- BANNER ISCRIZIONE NEWSLETTER INTERMEDIO -->
         <div class="box-newsletter" style="margin: 40px 0; background: #f0f5fa; padding: 25px; border-radius: 12px; border: 2px solid #2563eb;">
             <div class="newsletter-contenuto">
-                <h3 style="color: #0f172a; margin-top: 0;">🚀 Resta aggiornato sull'AI senza complicazioni</h3>
+                <h2 style="color: #0f172a; margin-top: 0; font-size: 1.4em;">🚀 Resta aggiornato sull'AI senza complicazioni</h2>
                 <p style="color: #334155;">Ricevi 1 volta a settimana i migliori strumenti, tutorial e trucchi gratuiti selezionati da AIMO LAB.</p>
                 
                 <form class="newsletter-form" action="https://formspree.io/f/xaewopaa" method="POST" style="margin-top: 15px;">
@@ -118,40 +147,64 @@
             </div>
         </div>
 
-        <!-- 2. PIATTAFORME E STRUMENTI AI DEL MESE -->
+        <!-- PIATTAFORME E STRUMENTI AI DEL MESE CON LOGHI E LINK ESTERNI -->
         <section style="margin: 40px 0;">
-            <h3 style="color: #0f172a;">⚡ Strumenti AI Consigliati del Mese</h3>
-            <p style="color: #334155; margin-bottom: 20px;">I migliori tool di intelligenza artificiale selezionati dal team di AIMO LAB:</p>
+            <h2 style="color: #0f172a; font-size: 1.5em; margin-bottom: 5px;">⚡ Strumenti AI Consigliati del Mese</h2>
+            <p style="color: #334155; margin-bottom: 20px; margin-top: 0;">I migliori tool di intelligenza artificiale selezionati dal team di AIMO LAB:</p>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                 
-                <div style="background: #d4c0f5; padding: 20px; border-radius: 10px; border: 1px solid #cbd5e1; position: relative;">
-                    <span style="background: #2563eb; color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 3px 8px; border-radius: 4px; position: absolute; top: 15px; right: 15px;">GRATIS</span>
-                    <h4 style="margin-top: 0; color: #0f172a; font-size: 1.2em;">ChatGPT</h4>
-                    <p style="color: #334155; font-size: 0.9em;">Il modello conversazionale più famoso per scrittura, riassunti, programmazione e studio.</p>
-                    <a href="https://chatgpt.com" target="_blank" style="color: #ffffff; background: #2563eb; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.85em; font-weight: bold; margin-top: 5px;">Provalo Subito ↗</a>
+                <!-- ChatGPT Card -->
+                <div style="background: #d4c0f5; padding: 20px; border-radius: 10px; border: 1px solid #cbd5e1; position: relative; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="background: #2563eb; color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 3px 8px; border-radius: 4px; position: absolute; top: 15px; right: 15px;">GRATIS</span>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <img src="https://cdn.simpleicons.org/openai/10a37f" alt="Logo ChatGPT / OpenAI" width="28" height="28" style="vertical-align: middle;">
+                            <h3 style="margin: 0; color: #0f172a; font-size: 1.2em;">ChatGPT</h3>
+                        </div>
+                        <p style="color: #334155; font-size: 0.9em; margin-bottom: 15px;">Il modello conversazionale più famoso per scrittura, riassunti, programmazione e studio.</p>
+                    </div>
+                    <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" style="color: #ffffff; background: #2563eb; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.85em; font-weight: bold; text-align: center;">Provalo Subito ↗</a>
                 </div>
 
-                <div style="background: #d4c0f5; padding: 20px; border-radius: 10px; border: 1px solid #cbd5e1; position: relative;">
-                    <span style="background: #2563eb; color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 3px 8px; border-radius: 4px; position: absolute; top: 15px; right: 15px;">GRATIS</span>
-                    <h4 style="margin-top: 0; color: #0f172a; font-size: 1.2em;">Google Gemini</h4>
-                    <p style="color: #334155; font-size: 0.9em;">L'AI di Google integrata con la ricerca in tempo reale ed elaborazione multimodale.</p>
-                    <a href="https://gemini.google.com" target="_blank" style="color: #ffffff; background: #2563eb; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.85em; font-weight: bold; margin-top: 5px;">Provalo Subito ↗</a>
+                <!-- Google Gemini Card -->
+                <div style="background: #d4c0f5; padding: 20px; border-radius: 10px; border: 1px solid #cbd5e1; position: relative; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="background: #2563eb; color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 3px 8px; border-radius: 4px; position: absolute; top: 15px; right: 15px;">GRATIS</span>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <img src="https://cdn.simpleicons.org/googlegemini/8e75ff" alt="Logo Google Gemini" width="28" height="28" style="vertical-align: middle;">
+                            <h3 style="margin: 0; color: #0f172a; font-size: 1.2em;">Google Gemini</h3>
+                        </div>
+                        <p style="color: #334155; font-size: 0.9em; margin-bottom: 15px;">L'AI di Google integrata con la ricerca in tempo reale ed elaborazione multimodale.</p>
+                    </div>
+                    <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" style="color: #ffffff; background: #2563eb; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.85em; font-weight: bold; text-align: center;">Provalo Subito ↗</a>
                 </div>
 
-                <div style="background: #d4c0f5; padding: 20px; border-radius: 10px; border: 1px solid #cbd5e1; position: relative;">
-                    <span style="background: #3b82f6; color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 3px 8px; border-radius: 4px; position: absolute; top: 15px; right: 15px;">FREEMIUM</span>
-                    <h4 style="margin-top: 0; color: #0f172a; font-size: 1.2em;">Flux AI</h4>
-                    <p style="color: #334155; font-size: 0.9em;">Il nuovo punto di riferimento per la generazione di immagini dettagliate e testi precisi nelle foto.</p>
-                    <a href="articoli/generatori-immagini-ai-midjourney-dall-e-flux.html" style="color: #ffffff; background: #2563eb; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.85em; font-weight: bold; margin-top: 5px;">Scopri dettagli →</a>
+                <!-- Flux AI Card -->
+                <div style="background: #d4c0f5; padding: 20px; border-radius: 10px; border: 1px solid #cbd5e1; position: relative; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="background: #3b82f6; color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 3px 8px; border-radius: 4px; position: absolute; top: 15px; right: 15px;">FREEMIUM</span>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+                                <rect width="24" height="24" rx="6" fill="#0F172A"/>
+                                <path d="M7 6H17V9H10V11H16V14H10V18H7V6Z" fill="#38BDF8"/>
+                            </svg>
+                            <h3 style="margin: 0; color: #0f172a; font-size: 1.2em;">Flux AI</h3>
+                        </div>
+                        <p style="color: #334155; font-size: 0.9em; margin-bottom: 15px;">Il nuovo punto di riferimento per la generazione di immagini dettagliate e testi precisi nelle foto.</p>
+                    </div>
+                    <div style="display: flex; gap: 8px; flex-direction: column;">
+                        <a href="https://flux1.ai" target="_blank" rel="noopener noreferrer" style="color: #ffffff; background: #2563eb; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.85em; font-weight: bold; text-align: center;">Provalo Subito ↗</a>
+                        <a href="articoli/generatori-immagini-ai-midjourney-dall-e-flux.html" style="color: #2563eb; text-align: center; font-size: 0.8em; font-weight: bold; text-decoration: underline;">Leggi la nostra guida →</a>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- 3. GUIDE PER PRINCIPIANTI: DA DOVE INIZIARE -->
+        <!-- GUIDE PER PRINCIPIANTI: DA DOVE INIZIARE -->
         <section class="box" style="border-left: 5px solid #2563eb; margin: 40px 0; background: #f0f5fa; padding: 20px; border-radius: 8px;">
-            <h3 style="margin-top: 0; color: #0f172a;">🎓 Nuovi nell'AI? Da dove iniziare</h3>
+            <h2 style="margin-top: 0; color: #0f172a; font-size: 1.4em;">🎓 Nuovi nell'AI? Da dove iniziare</h2>
             <p style="color: #334155;">Se muovi i primi passi nel mondo dell'intelligenza artificiale, segui questo percorso guidato:</p>
 
             <ul style="line-height: 1.8; color: #1e293b; padding-left: 20px;">
@@ -161,10 +214,10 @@
             </ul>
         </section>
 
-        <!-- 4. LIBRERIA PROMPT PRONTI (SNIPPET RAPIDI) -->
+        <!-- LIBRERIA PROMPT PRONTI -->
         <section style="margin: 40px 0;">
-            <h3 style="color: #0f172a;">💡 Prompt Rapidi da Copiare e Incollare</h3>
-            <p style="color: #334155; margin-bottom: 20px;">Copia questi comandi ed incollali direttamente su ChatGPT o Gemini:</p>
+            <h2 style="color: #0f172a; font-size: 1.5em; margin-bottom: 5px;">💡 Prompt Rapidi da Copiare e Incollare</h2>
+            <p style="color: #334155; margin-bottom: 20px; margin-top: 0;">Copia questi comandi ed incollali direttamente su ChatGPT o Gemini:</p>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px;">
                 
@@ -188,7 +241,7 @@
 
         <!-- WIDGET INTERATTIVO (QUIZ) -->
         <div class="box-widget" style="margin: 40px 0; background: #f0f5fa; padding: 25px; border-radius: 12px; border: 1px solid #bfdbfe;">
-            <h3 style="color: #0f172a; margin-top: 0;">🎯 Quale AI fa al caso tuo?</h3>
+            <h2 style="color: #0f172a; margin-top: 0; font-size: 1.4em;">🎯 Quale AI fa al caso tuo?</h2>
             <p style="color: #334155;">Rispondi a una domanda per scoprire lo strumento ideale per le tue esigenze.</p>
 
             <div id="quiz-container" style="margin-top: 15px;">
@@ -205,19 +258,19 @@
             <div id="risultato-quiz" class="risultato-quiz" style="display: none; margin-top: 15px; background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #93c5fd; color: #0f172a;"></div>
         </div>
 
-        <!-- 5. STATISTICHE AIMO LAB (SOCIAL PROOF) -->
+        <!-- STATISTICHE AIMO LAB -->
         <section style="margin: 40px 0; text-align: center; background: #f0f5fa; padding: 25px; border-radius: 12px; border: 1px solid #bfdbfe;">
             <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
                 <div>
-                    <h3 style="font-size: 2em; color: #2563eb; margin: 0;">+50</h3>
+                    <span style="font-size: 2em; color: #2563eb; font-weight: bold; display: block;">+50</span>
                     <p style="color: #334155; margin: 5px 0 0 0; font-weight: 600;">Prompt Pronti</p>
                 </div>
                 <div>
-                    <h3 style="font-size: 2em; color: #2563eb; margin: 0;">100%</h3>
+                    <span style="font-size: 2em; color: #2563eb; font-weight: bold; display: block;">100%</span>
                     <p style="color: #334155; margin: 5px 0 0 0; font-weight: 600;">Guide Gratuite</p>
                 </div>
                 <div>
-                    <h3 style="font-size: 2em; color: #2563eb; margin: 0;">2026</h3>
+                    <span style="font-size: 2em; color: #2563eb; font-weight: bold; display: block;">2026</span>
                     <p style="color: #334155; margin: 5px 0 0 0; font-weight: 600;">Contenuti Aggiornati</p>
                 </div>
             </div>
@@ -225,14 +278,14 @@
 
         <!-- BOX STRUMENTI -->
         <div id="strumenti" class="box" style="background: #d4c0f5; padding: 20px; border-radius: 10px; border: 1px solid #bfdbfe; margin-bottom: 25px;">
-            <h3 style="color: #0f172a; margin-top: 0;">🛠️ Strumenti AI Consigliati</h3>
+            <h2 style="color: #0f172a; margin-top: 0; font-size: 1.3em;">🛠️ Strumenti AI Consigliati</h2>
             <p style="color: #334155;">Panoramica completa e recensioni dei principali software gratuiti e professionali basati su intelligenza artificiale divisi per categoria.</p>
             <a href="strumenti.html" style="color: #2563eb; font-weight: bold; text-decoration: underline;">Scopri tutti gli strumenti AI →</a>
         </div>
 
         <!-- BOX CONTATTI -->
         <div id="contatti" class="box" style="background: #d4c0f5; padding: 20px; border-radius: 10px; border: 1px solid #bfdbfe; margin-bottom: 25px;">
-            <h3 style="color: #0f172a; margin-top: 0;">✉️ Domande o suggerimenti?</h3>
+            <h2 style="color: #0f172a; margin-top: 0; font-size: 1.3em;">✉️ Domande o suggerimenti?</h2>
             <p style="color: #334155;">Vuoi proporre un argomento o richiedere un tutorial specifico? Puoi contattarci direttamente tramite email.</p>
             <a href="contatti.html" style="color: #2563eb; font-weight: bold; text-decoration: underline;">Vai alla pagina contatti →</a>
         </div>
@@ -251,6 +304,7 @@
         </p>
     </footer>
 
+    <!-- Script Quiz Interattivo Corretto -->
     <script>
     function calcolaRisultatoAI() {
         const scelta = document.getElementById('scopo-ai').value;
@@ -259,11 +313,11 @@
         let consiglio = "";
 
         if (scelta === "testi") {
-            consiglio = "👉 <strong>Consiglio:</strong> Prova <strong>ChatGPT</strong> o <strong>Claude</strong>. Sono perfetti per sintesi, stesura testi e supporto allo studio.<br><br><a href='articoli/cos-e-chatgpt.html' style='color:#2563eb; font-weight:bold;'>Leggi la nostra guida a ChatGPT →</a>";
+            consiglio = "👉 <strong>Consiglio:</strong> Prova <strong>ChatGPT</strong> o <strong>Claude</strong>. Sono perfetti per sintesi, stesura testi e supporto allo studio.<br><br><a href='articoli/chatgpt-uso-quotidiano-scuola.html' style='color:#2563eb; font-weight:bold;'>Leggi la nostra guida a ChatGPT →</a>";
         } else if (scelta === "immagini") {
             consiglio = "👉 <strong>Consiglio:</strong> Prova <strong>Midjourney</strong> o <strong>Flux</strong> per la generazione e il fotoritocco.<br><br><a href='articoli/generatori-immagini-ai-midjourney-dall-e-flux.html' style='color:#2563eb; font-weight:bold;'>Leggi la guida alle AI per Immagini →</a>";
         } else if (scelta === "produttivita") {
-            consiglio = "👉 <strong>Consiglio:</strong> Scopri la nostra selezione dei migliori software per velocizzare il lavoro quotidiano.<br><br><a href='articoli/strumenti-ai-gratis.html' style='color:#2563eb; font-weight:bold;'>Scopri i 10 strumenti AI gratuiti →</a>";
+            consiglio = "👉 <strong>Consiglio:</strong> Scopri la nostra selezione dei migliori software per velocizzare il lavoro quotidiano.<br><br><a href='strumenti.html' style='color:#2563eb; font-weight:bold;'>Scopri gli strumenti AI gratuiti →</a>";
         } else {
             consiglio = "⚠️ Seleziona un'opzione prima di continuare!";
         }
@@ -273,38 +327,36 @@
     }
     </script>
 
-<!-- Pulsante Torna Su -->
-<button id="btnTornaSu" title="Torna in alto">↑</button>
+    <!-- Pulsante Torna Su -->
+    <button id="btnTornaSu" title="Torna in alto">↑</button>
 
-<script>
-    const btnTornaSu = document.getElementById("btnTornaSu");
+    <script>
+        const btnTornaSu = document.getElementById("btnTornaSu");
 
-    // Mostra o nasconde il pulsante in base allo scorrimento
-    window.onscroll = function() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            btnTornaSu.style.display = "block";
-        } else {
-            btnTornaSu.style.display = "none";
-        }
-    };
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnTornaSu.style.display = "block";
+            } else {
+                btnTornaSu.style.display = "none";
+            }
+        };
 
-    // Scorre la pagina verso l'alto quando si clicca il pulsante
-    btnTornaSu.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth" // Scorrimento fluido
+        btnTornaSu.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
-    });
-</script>
+    </script>
 
-<script>
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
 
-    menuToggle.addEventListener("click", function() {
-        navLinks.classList.toggle("attivo");
-    });
-</script>
+        menuToggle.addEventListener("click", function() {
+            navLinks.classList.toggle("attivo");
+        });
+    </script>
     
 </body>
 
