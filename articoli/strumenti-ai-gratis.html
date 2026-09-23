@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 strumenti di intelligenza artificiale gratuiti nel 2026 - AIMO LAB</title>
     <meta name="description" content="Scopri i migliori 10 strumenti di intelligenza artificiale gratuiti del 2026 per lavoro, studio, produttività e creatività su AIMO LAB.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://aimolab-admin.github.io/aimolab/favicon.png">
+
+    <!-- Foglio di Stile -->
     <link rel="stylesheet" href="../stile.css">
 
     <!-- Schema Markup JSON-LD per SEO (TechArticle) -->
@@ -39,27 +44,26 @@
 <body>
 
     <nav>
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo">
+                <span>AIMO</span> LAB
+            </div>
+        </a>
         
-    <a href="../index.html" style="text-decoration: none; color: inherit;">
-    <div class="logo">
-        <span>AIMO</span> LAB
-    </div>
-</a>
-    
-    <!-- Pulsante Menu per Smartphone -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Apri Menu">
-        ☰ <!-- Oppure puoi usare l'icona ☰ -->
-    </button>
+        <!-- Pulsante Menu per Smartphone -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Apri Menu">
+            ☰
+        </button>
 
-    <!-- Lista dei link -->
-    <ul id="navLinks">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../strumenti.html">Strumenti</a></li>
-        <li><a href="../contatti.html">Contatti</a></li>
-        <li><a href="../chi-siamo.html">Chi siamo</a></li>
-        <li><a href="../articoli.html">Articoli</a></li>
-    </ul>
-</nav>
+        <!-- Lista dei link -->
+        <ul id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strumenti.html">Strumenti</a></li>
+            <li><a href="../contatti.html">Contatti</a></li>
+            <li><a href="../chi-siamo.html">Chi siamo</a></li>
+            <li><a href="../articoli.html">Articoli</a></li>
+        </ul>
+    </nav>
 
     <header>
         <div class="mascotte">
@@ -141,38 +145,38 @@
         </p>
     </footer>
 
-<!-- Pulsante Torna Su -->
-<button id="btnTornaSu" title="Torna in alto">↑</button>
+    <!-- Pulsante Torna Su -->
+    <button id="btnTornaSu" title="Torna in alto">↑</button>
 
-<script>
-    const btnTornaSu = document.getElementById("btnTornaSu");
+    <script>
+        const btnTornaSu = document.getElementById("btnTornaSu");
 
-    // Mostra o nasconde il pulsante in base allo scorrimento
-    window.onscroll = function() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            btnTornaSu.style.display = "block";
-        } else {
-            btnTornaSu.style.display = "none";
-        }
-    };
+        // Mostra o nasconde il pulsante in base allo scorrimento
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnTornaSu.style.display = "block";
+            } else {
+                btnTornaSu.style.display = "none";
+            }
+        };
 
-    // Scorre la pagina verso l'alto quando si clicca il pulsante
-    btnTornaSu.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth" // Scorrimento fluido
+        // Scorre la pagina verso l'alto quando si clicca il pulsante
+        btnTornaSu.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Scorrimento fluido
+            });
         });
-    });
-</script>
+    </script>
 
-<script>
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
 
-    menuToggle.addEventListener("click", function() {
-        navLinks.classList.toggle("attivo");
-    });
-</script>
+        menuToggle.addEventListener("click", function() {
+            navLinks.classList.toggle("attivo");
+        });
+    </script>
     
 </body>
 
