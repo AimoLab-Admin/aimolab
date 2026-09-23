@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generatori di Immagini AI: Midjourney, DALL-E 3 e Flux a Confronto - AIMO LAB</title>
     <meta name="description" content="Confronto approfondito tra i migliori generatori di immagini AI nel 2026: Midjourney, DALL-E 3 e Flux. Scopri differenze, punti di forza e quale scegliere.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://aimolab-admin.github.io/aimolab/favicon.png">
+
+    <!-- Foglio di Stile -->
     <link rel="stylesheet" href="../stile.css">
 
     <!-- Schema Markup JSON-LD per SEO (TechArticle) -->
@@ -15,22 +20,22 @@
       "@type": "TechArticle",
       "headline": "Generatori di Immagini AI: Midjourney, DALL-E 3 e Flux a Confronto",
       "description": "Un confronto dettagliato tra i tre modelli di generazione immagine AI più usati nel 2026: Midjourney, DALL-E 3 e Flux.",
-      "image": "https://www.aimolab.it/mascotte-ai.png",
+      "image": "https://aimolab-admin.github.io/aimolab/mascotte-ai.png",
       "author": {
         "@type": "Organization",
         "name": "AIMO LAB",
-        "url": "https://www.aimolab.it"
+        "url": "https://aimolab-admin.github.io/aimolab/"
       },
       "publisher": {
         "@type": "Organization",
         "name": "AIMO LAB",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.aimolab.it/mascotte-ai.png"
+          "url": "https://aimolab-admin.github.io/aimolab/favicon.png"
         }
       },
       "datePublished": "2026-08-08",
-      "dateModified": "2026-08-08",
+      "dateModified": "2026-09-23",
       "inLanguage": "it-IT"
     }
     </script>
@@ -39,26 +44,26 @@
 <body>
 
     <nav>
-    <a href="../index.html" style="text-decoration: none; color: inherit;">
-    <div class="logo">
-        <span>AIMO</span> LAB
-    </div>
-</a>
-    
-    <!-- Pulsante Menu per Smartphone -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Apri Menu">
-        ☰ <!-- Oppure puoi usare l'icona ☰ -->
-    </button>
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo">
+                <span>AIMO</span> LAB
+            </div>
+        </a>
+        
+        <!-- Pulsante Menu per Smartphone -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Apri Menu">
+            ☰
+        </button>
 
-    <!-- Lista dei link -->
-    <ul id="navLinks">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../strumenti.html">Strumenti</a></li>
-        <li><a href="../contatti.html">Contatti</a></li>
-        <li><a href="../chi-siamo.html">Chi siamo</a></li>
-        <li><a href="../articoli.html">Articoli</a></li>
-    </ul>
-</nav>
+        <!-- Lista dei link -->
+        <ul id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strumenti.html">Strumenti</a></li>
+            <li><a href="../contatti.html">Contatti</a></li>
+            <li><a href="../chi-siamo.html">Chi siamo</a></li>
+            <li><a href="../articoli.html">Articoli</a></li>
+        </ul>
+    </nav>
 
     <header>
         <div class="mascotte">
@@ -70,7 +75,7 @@
 
     <div class="contenitore">
 
-        <article>
+        <article class="articolo-dettaglio">
             <p>La generazione di immagini tramite <strong>intelligenza artificiale</strong> ha raggiunto livelli di realismo e precisione straordinari. Oggi non si tratta più solo di creare immagini divertenti o astratte, ma di generare veri e propri asset grafici per il web, il marketing, il design e la creatività personale.</p>
 
             <p>In questo confronto analizzeremo i tre principali protagonisti del settore: <strong>Midjourney</strong>, <strong>DALL-E 3</strong> e <strong>Flux</strong>, mettendone in luce vantaggi, limitazioni e casi d'uso ideali.</p>
@@ -190,38 +195,34 @@
         </p>
     </footer>
 
-<!-- Pulsante Torna Su -->
-<button id="btnTornaSu" title="Torna in alto">↑</button>
+    <!-- Pulsante Torna Su -->
+    <button id="btnTornaSu" title="Torna in alto" aria-label="Torna in alto">↑</button>
 
-<script>
-    const btnTornaSu = document.getElementById("btnTornaSu");
+    <script>
+        const btnTornaSu = document.getElementById("btnTornaSu");
 
-    // Mostra o nasconde il pulsante in base allo scorrimento
-    window.onscroll = function() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            btnTornaSu.style.display = "block";
-        } else {
-            btnTornaSu.style.display = "none";
-        }
-    };
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnTornaSu.style.display = "block";
+            } else {
+                btnTornaSu.style.display = "none";
+            }
+        };
 
-    // Scorre la pagina verso l'alto quando si clicca il pulsante
-    btnTornaSu.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth" // Scorrimento fluido
+        btnTornaSu.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
-    });
-</script>
 
-<script>
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
 
-    menuToggle.addEventListener("click", function() {
-        navLinks.classList.toggle("attivo");
-    });
-</script>
+        menuToggle.addEventListener("click", function() {
+            navLinks.classList.toggle("attivo");
+        });
+    </script>
     
 </body>
 
